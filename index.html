@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AI Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        #chat {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #messages {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .message {
+            margin: 5px 0;
+        }
+        .user {
+            text-align: right;
+            color: blue;
+        }
+        .ai {
+            text-align: left;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat">
+        <h2>Chatbot</h2>
+        <div id="messages"></div>
+        <input type="text" id="input" placeholder="Type your message..." />
+        <button id="send">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
