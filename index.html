@@ -54,12 +54,12 @@
             const userMessage = input.value;
             
             if (userMessage) {
-                displayMessage(userMessage, 'user');
+                displayMessage(userMessage, 'do you have rizz');
                 input.value = '';
 
                 const aiResponse = getAIResponse(userMessage);
                 setTimeout(() => {
-                    displayMessage(aiResponse, 'ai');
+                    displayMessage(aiResponse, 'yes');
                 }, 500);
             }
         });
